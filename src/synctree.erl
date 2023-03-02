@@ -132,7 +132,7 @@ newdb(Id) ->
 
 -spec newdb(term(), options()) -> tree().
 newdb(Id, Opts) ->
-    new(Id, default, default, synctree_leveldb, Opts).
+    new(Id, default, default, synctree_ets, Opts).
 
 -spec new() -> tree().
 new() ->
